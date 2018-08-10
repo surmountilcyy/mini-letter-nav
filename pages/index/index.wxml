@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view class="scroll-wrap" style="height:{{scrollHeight}}px;" scroll-y scroll-into-view="{{toLetterView}}">
+    <block wx:for="{{provinceData}}" wx:for-item="item" wx:key="{{index}}">
+      <view id="{{item.code}}" class='city-item'>
+        <view class="letter-city">{{item.code}}</view>
+        <view class="item-list">
+          <view class="item" wx:key="{{index}}" wx:for="{{item.codeData}}" wx:for-item="subItem" data-id="{{subItem.id}}" data-name="{{subItem.name}}"
+            catch:tap="onProvinceGetCity">{{subItem.name}}</view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <!-- 字母导航组件 -->
+  <letter-nav-tag bind:getLetterItem="onGetLetterItem" letter-data="{{letterData}}" is-search="{{ false }}"></letter-nav-tag>
+</view>

@@ -1,0 +1,4 @@
+<view wx:if="{{letterData.length}}" class="letter-nav" style="{{letterStyles}}">
+    <image wx:if="{{isSearch}}" id="SEARCH" class="icon-search letter-item" src='/assets/icon-letter-nav@2x.png' catchtap="onLetterNav"></image>
+    <text wx:for="{{letterData}}" wx:key="{{index}}"  class="letter-item" data-item="{{item}}" catchtap="onLetterNav" >{{item}}</text>
+</view>

@@ -1,0 +1,28 @@
+.city-item {
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.city-item .letter-city {
+  width: 100%;
+  height: 56rpx;
+  font-size: 24rpx;
+  background-color: #F1F1F1;
+  color: #1883FE;
+  line-height: 56rpx;
+  padding-left: 30rpx;
+}
+.city-item  .item-list {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.city-item  .item-list .item {
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 26rpx;
+  border-bottom: 2rpx solid #F1F1F1;
+  color: #333;
+}
+.city-item  .item-list .item:last-child {
+  border-bottom: 0 none;
+}

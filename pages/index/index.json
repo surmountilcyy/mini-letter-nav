@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "letter-nav-tag": "/components/letterNav/letterNav"
+    }
+  }
